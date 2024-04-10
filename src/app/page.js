@@ -1,14 +1,13 @@
 import Header from "./components/Header";
-import Homepage from "./pages/Homepage";
 import Footer from "./components/Footer";
 import { Fragment } from "react";
+import Homepage from "./homepage/page";
+import LayoutHOC from "@/utils/LayoutHOC";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <LayoutHOC>
       <Homepage />
-      <Footer />
-    </div>
+    </LayoutHOC>
   );
 }
