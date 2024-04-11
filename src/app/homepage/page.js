@@ -43,7 +43,7 @@ const Homepage = () => {
     <Fragment>
       <ToastContainer delay={3000} position='top-center'/>
       {openModel ? (
-            <div className='flex w-full h-[calc(100vh-120px)] bg-[#f1f2f6]'>
+            <div className='flex w-full h-[calc(100vh-120px)] bg-cyan-50 '>
             <div className='flex justify-center items-center w-1/2 h-full border-2'>
               <Form handleSubmit={handleSubmit}/>
             </div>
@@ -52,7 +52,7 @@ const Homepage = () => {
             </div>
           </div>
       ): (
-        <div className='flex justify-center bg-[#e6fdff] items-center w-full h-[calc(100vh-120px)]'>
+        <div className='flex justify-center bg-cyan-50  items-center w-full h-[calc(100vh-120px)]'>
           <Form handleSubmit={handleSubmit}/>
         </div>
       )}
