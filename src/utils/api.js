@@ -10,13 +10,9 @@ export const fetchUserDetails = async(name) => {
       genderResponse.json(),
       nationDataResponse.json(),
     ]);
-    let imgResponse;
+    
     const nation = nationData?.country[0];
-    // if(nation && nation.country_id) {
-    //   const flagImg = await fetch(`https://flagsapi.com/${nation.country_id}/flat/64.png`);
-    //   imgResponse = flagImg.json();
-    // }
-    return {ageData, genderData, nation, imgResponse}
+    return {ageData, genderData, nation}
   } catch (error) {
     console.log(error);
     return error

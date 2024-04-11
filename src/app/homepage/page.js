@@ -27,7 +27,8 @@ const Homepage = () => {
         name: name,
         age: response?.ageData?.age ? response.ageData.age : "Unknown",
         gender: response?.genderData?.gender ? response.genderData.gender : "Unknown",
-        nationality: response?.nation?.country_id ? countryCodesMap[response.nation.country_id] : "Unknown"
+        countryId: response?.nation?.country_id ? response.nation.country_id : "Unknown",
+        country: response?.nation?.country_id ? countryCodesMap[response.nation.country_id] : "Unknown"
       }
       setUserData(resultObj);
       setLoading(false);
