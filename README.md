@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```markdown
+# IdentityFinder Pro Application
 
-## Getting Started
+IdentityFinder Pro is a Next.js application designed to provide insights into a person's identity based on their name. It utilizes a set of APIs to gather information such as age, gender, country code, and flag image associated with the provided name.
 
-First, run the development server:
+## APIs Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. **Age API**:
+   - Endpoint: [https://api.agify.io?name=](https://api.agify.io?name=)
+   - Description: This API predicts the age of a person based on their name.
+
+2. **Gender API**:
+   - Endpoint: [https://api.genderize.io?name=](https://api.genderize.io?name=)
+   - Description: This API predicts the gender of a person based on their name.
+
+3. **Country Code API**:
+   - Endpoint: [https://api.nationalize.io?name=](https://api.nationalize.io?name=)
+   - Description: This API predicts the most likely countries associated with a given name and provides their country codes.
+
+4. **Flag Image API**:
+   - Endpoint: [https://flagsapi.com/:country_code/:style/:size.png](https://flagsapi.com/:country_code/:style/:size.png)
+   - Description: This API provides flag images of countries based on their country codes. 
+
+## Example Usage
+
+Suppose we have a name "John". Using the IdentityFinder Pro application, we can retrieve the following information:
+
+- Age: Predicted age of Rishabh.
+- Gender: Predicted gender of Rishabh.
+- Country Code: Most likely countries associated with the name Rishabh along with their country codes.
+- Flag Image: Flag image(s) of the country/countries associated with the name Rishabh.
+
+### UI Images
+![UI Image](./src/static/homepage.png)
+![UI Image](./src/static/details.png)
+
+## Installation
+
+To install and run the IdentityFinder Pro application locally, follow these steps:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the application using `npm run dev`.
+
+
+
+## Contributions
+
+Contributions to the IdentityFinder Pro application are welcome! Feel free to submit issues, feature requests, or pull requests to help improve the application.
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to modify it according to your preferences and add any additional information or sections you deem necessary!
