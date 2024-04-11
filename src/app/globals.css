@@ -34,9 +34,13 @@ body {
 
 @keyframes shimmer {
   0% {
-      background-position: 200% 0;
+    background-position: -1000px;
   }
   100% {
-      background-position: -200% 0;
+    background-position: 1000px;
   }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite linear;
 }
