@@ -1,4 +1,3 @@
-```markdown
 # IdentityFinder Pro Application
 
 IdentityFinder Pro is a Next.js application designed to provide insights into a person's identity based on their name. It utilizes a set of APIs to gather information such as age, gender, country code, and flag image associated with the provided name.
