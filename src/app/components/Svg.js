@@ -1,7 +1,7 @@
 export const MaleSvg = () => {
   return (
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="1280.000000pt" height="1119.000000pt" viewBox="0 0 1280.000000 1119.000000"
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="12pt" height="11pt" viewBox="0 0 1280.000000 1119.000000"
       preserveAspectRatio="xMidYMid meet">
       <metadata>
       Created by potrace 1.15, written by Peter Selinger 2001-2017
@@ -58,7 +58,7 @@ export const MaleSvg = () => {
 export const FemaleSvg = () => {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="886.000000pt" height="1280.000000pt" viewBox="0 0 886.000000 1280.000000"
+      width="88" height="12pt" viewBox="0 0 886.000000 1280.000000"
       preserveAspectRatio="xMidYMid meet">
       <metadata>
       Created by potrace 1.15, written by Peter Selinger 2001-2017
